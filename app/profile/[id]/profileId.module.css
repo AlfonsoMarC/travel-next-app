@@ -1,0 +1,14 @@
+.profileFooter {
+  height: 50px;
+  background-color: blue;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.profileMenu {
+  border: 1px solid black;
+  width: 200px;
+}
