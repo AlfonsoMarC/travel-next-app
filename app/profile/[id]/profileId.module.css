@@ -12,3 +12,14 @@
   border: 1px solid black;
   width: 200px;
 }
+
+.mainContent {
+  display: flex;
+  background: orange;
+  flex: 1;
+}
+
+.mapContainer {
+  height: 100%;
+  width: 100%;
+}

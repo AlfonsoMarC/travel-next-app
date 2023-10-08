@@ -1,3 +1,4 @@
+import MapComponent from "@/components/ui/Map/Map";
 import styles from "./profileId.module.css";
 
 interface IProfile {
@@ -5,7 +6,9 @@ interface IProfile {
 }
 
 const fetchTrips = () => {
-  return fetch("http://localhost:4000/api/v1/trips", { cache: "no-store" }).then(res => res.json());
+  return fetch("http://localhost:4000/api/v1/trips", {
+    cache: "no-store",
+  }).then((res) => res.json());
 };
 
 export default async function Profile({ params }: IProfile) {
@@ -21,7 +24,11 @@ export default async function Profile({ params }: IProfile) {
           ))}
         </ul>
       </aside>
-      <main>Map</main>
+      <main className={styles.mainContent}>
+        <div className={styles.mapContainer}>
+          <MapComponent />
+        </div>
+      </main>
     </div>
   );
 }
