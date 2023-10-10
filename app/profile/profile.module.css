@@ -1,11 +1,12 @@
 .profileFooter {
   height: 50px;
-  background-color: blue;
+  background-color: #333333;
 }
 
 .container {
   display: flex;
   flex: 1;
+  overflow: hidden;
 }
 
 .profileMenu {

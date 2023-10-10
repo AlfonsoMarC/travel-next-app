@@ -7,8 +7,8 @@ interface IProfile {
 
 const fetchTrips = () => {
   return fetch("http://localhost:4000/api/v1/trips", {
-    cache: "no-store",
-  }).then((res) => res.json());
+    cache: "no-store"
+  }).then(res => res.json());
 };
 
 export default async function Profile({ params }: IProfile) {
